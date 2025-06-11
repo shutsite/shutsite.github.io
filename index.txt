@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shut — Designer & Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(ellipse at top, rgba(179, 102, 255, 0.2), #0a0817 70%);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1920px;
+      height: 1080px;
+      margin: 0 auto;
+      padding: 80px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      line-height: 1.3;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    h1 .highlight {
+      color: #b366ff;
+      margin: 0 5px;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: #ccc;
+      margin-top: -10px;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      animation: fadeIn 1.2s ease forwards;
+    }
+
+    .card {
+      background-color: #14121f;
+      padding: 20px;
+      border-radius: 12px;
+      flex: 1 1 300px;
+      min-width: 280px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: cardFade 0.7s ease forwards;
+    }
+
+    .card:nth-child(1) { animation-delay: 0.2s; }
+    .card:nth-child(2) { animation-delay: 0.4s; }
+    .card:nth-child(3) { animation-delay: 0.6s; }
+
+    @keyframes cardFade {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .card h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card h2 .yellow {
+      color: white;
+    }
+
+    .card h2 .blue {
+      color: #00bfff;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      margin-top: 8px;
+      color: #ccc;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #14121f;
+      padding: 10px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #1c1a2b;
+    }
+
+    .fa-telegram, .fa-discord {
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 40px 20px;
+        height: auto;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Yo, I’m <span class="highlight">shut</span> — designer and web developer</h1>
+    <p class="subtitle">Делаю стильные превью, discord-дизайн и сайты под заказ</p>
+
+    <div class="grid">
+      <div class="card">
+        <h2><span class="yellow">🖌️</span> • Graphic Design</h2>
+        <p>Youtube, Vk, Discord designs</p>
+        <p>Avatars, banner and animated</p>
+      </div>
+
+      <div class="card">
+        <h2><span class="blue">🌐</span> • Websites</h2>
+        <p>Одностранички</p>
+        <p>Быстро, удобно, стильно</p>
+      </div>
+
+      <div class="card">
+        <h2>• Portfolio</h2>
+        <p><a href="https://t.me/ShutCase" style="color: #ccc; text-decoration: none;">telegram</a></p>
+      </div>
+    </div>
+
+    <div class="links">
+      <a class="button" href="https://t.me/ipshut" target="_blank">
+        <i class="fab fa-telegram"></i> @IpShut
+      </a>
+      <a class="button" href="https://discord.com/users/IpShut" target="_blank">
+        <i class="fab fa-discord"></i> @IpShut
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
