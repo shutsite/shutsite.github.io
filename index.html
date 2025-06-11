@@ -20,7 +20,7 @@
       width: 100%;
       height: 100%;
       font-family: 'Inter', sans-serif;
-      background: radial-gradient(circle at center, #0d0b1f, #0a0817);
+      background: radial-gradient(circle at center, rgba(179, 102, 255, 0.1), #0a0817);
       color: white;
       overflow-x: hidden;
     }
@@ -81,15 +81,11 @@
     }
 
     .card h2 .yellow {
-      color: #ffc107;
+      color: #fff;
     }
 
     .card h2 .blue {
       color: #00bfff;
-    }
-
-    .card h2 .white {
-      color: white;
     }
 
     .card p {
@@ -124,6 +120,15 @@
       font-size: 1.2rem;
     }
 
+    .portfolio-link {
+      text-decoration: none;
+      color: white;
+    }
+
+    .portfolio-link:hover {
+      text-decoration: underline;
+    }
+
     @media (max-width: 768px) {
       .container {
         padding: 40px 20px;
@@ -144,22 +149,21 @@
 
     <div class="grid">
       <div class="card">
-        <h2><span class="yellow">🖌️</span> <span class="white">Graphic Design</span></h2>
+        <h2><span class="yellow">🖌️</span> Graphic Design</h2>
         <p>Youtube, Vk, Discord designs</p>
         <p>Avatars, banner and animated</p>
       </div>
 
       <div class="card">
-        <h2><span class="blue">🌐</span> <span class="blue">Websites</span></h2>
+        <h2><span class="blue">🌐</span> Websites</h2>
         <p>Одностранички</p>
         <p>Быстро, удобно, стильно</p>
       </div>
 
-      <div class="card">
-        <h2><span class="white">Portfolio</span></h2>
+      <a class="card portfolio-link" href="https://t.me/ShutCase" target="_blank">
+        <h2>Portfolio</h2>
         <p>telegram</p>
-        <p>discord server</p>
-      </div>
+      </a>
     </div>
 
     <div class="links">
@@ -173,4 +177,4 @@
   </div>
 </body>
 
-  </html>
+</html>
